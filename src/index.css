@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-back {
+    @apply bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-lg;
+  }
+  
+  .card-front {
+    @apply rounded-lg shadow-md bg-white flex items-center justify-center transform rotate-y-180;
+  }
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
